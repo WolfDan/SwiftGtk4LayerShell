@@ -2,10 +2,6 @@ module CGtk4LayerShell [system] {
     header "gtk4-layer-shell.h"
 
     link "gtk4-layer-shell"
-    link "gtk-4"
-    link "glib-2.0"
-    link "wayland-client"
-    link "wayland-protocols"
 
     export *
 }

@@ -1,5 +1,0 @@
-version: 1
-gir-name: Gtk4LayerShell-1.0
-pkg-config: gtk4-layer-shell-0
-output-directory: Sources/Gtk4LayerShell
-alpha-names: true

@@ -1,166 +1,121 @@
 {
-  "originHash" : "c6593a00b4895d1337e7bdf4543a97dd470283d3c2693403fc2c5e68742b41ed",
+  "originHash" : "bad7ead95f738d35812a19e2c29f3d314b95b305fc14c2ea4c8798e94b838ab8",
   "pins" : [
     {
-      "identity" : "gir2swift",
+      "identity" : "jpeg",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/gir2swift.git",
+      "location" : "https://github.com/stackotter/jpeg",
+      "state" : {
+        "revision" : "a27e47f49479993b2541bc5f5c95d9354ed567a0",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "libpng",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/the-swift-collective/libpng",
+      "state" : {
+        "revision" : "0eff23aca92a086b7892831f5cb4f58e15be9449",
+        "version" : "1.6.45"
+      }
+    },
+    {
+      "identity" : "libwebp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/the-swift-collective/libwebp",
+      "state" : {
+        "revision" : "5f745a17b9a5c2a4283f17c2cde4517610ab5f99",
+        "version" : "1.4.1"
+      }
+    },
+    {
+      "identity" : "swift-cross-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stackotter/swift-cross-ui",
       "state" : {
         "branch" : "main",
-        "revision" : "cf8b20dea739abbe9cd10fa6575563f5000a7598"
+        "revision" : "1f71097aab2dd86d904e141138e8db36f0ece68d"
       }
     },
     {
-      "identity" : "swift-argument-parser",
+      "identity" : "swift-cwinrt",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/apple/swift-argument-parser",
-      "state" : {
-        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
-        "version" : "1.5.0"
-      }
-    },
-    {
-      "identity" : "swiftatk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftAtk.git",
+      "location" : "https://github.com/thebrowsercompany/swift-cwinrt",
       "state" : {
         "branch" : "main",
-        "revision" : "4baee673e081a34946dac0096a49e66a2c91c239"
+        "revision" : "3e3d5a0270ebe8fb0bc738d24d4786a6cd0621eb"
       }
     },
     {
-      "identity" : "swiftcairo",
+      "identity" : "swift-image-formats",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftCairo.git",
+      "location" : "https://github.com/stackotter/swift-image-formats",
+      "state" : {
+        "revision" : "697bd8aa62bef7d74a1383454e3534a527769e41",
+        "version" : "0.3.2"
+      }
+    },
+    {
+      "identity" : "swift-macro-toolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stackotter/swift-macro-toolkit",
+      "state" : {
+        "revision" : "e706aa98bc28f82677923f7b8f560bba6f90fac2",
+        "version" : "0.6.0"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
+      }
+    },
+    {
+      "identity" : "swift-uwp",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thebrowsercompany/swift-uwp",
       "state" : {
         "branch" : "main",
-        "revision" : "161b8af708b9ff75a86f18929c249f8c632af303"
+        "revision" : "4fe2fa05652f688ba5af57d0ce9e93961f6dea98"
       }
     },
     {
-      "identity" : "swiftgdk",
+      "identity" : "swift-windowsappsdk",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGdk.git",
-      "state" : {
-        "branch" : "gtk4",
-        "revision" : "891caf6285dbd6c3b3f7cf425ff5d022857300dd"
-      }
-    },
-    {
-      "identity" : "swiftgdkpixbuf",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGdkPixbuf.git",
+      "location" : "https://github.com/wabiverse/swift-windowsappsdk",
       "state" : {
         "branch" : "main",
-        "revision" : "807bf990fe3786e4f89698bfde6dc9696053b0ba"
+        "revision" : "36e2f6c261fcbffc303c107b24f705605f3908be"
       }
     },
     {
-      "identity" : "swiftgio",
+      "identity" : "swift-windowsfoundation",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGIO.git",
+      "location" : "https://github.com/thebrowsercompany/swift-windowsfoundation",
       "state" : {
         "branch" : "main",
-        "revision" : "8fce80d439710293b0c9d81f03503d0319916e9a"
+        "revision" : "dbe14563b6bb0eb9c761d8aff7f465afddf185f9"
       }
     },
     {
-      "identity" : "swiftglib",
+      "identity" : "swift-winui",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGLib.git",
+      "location" : "https://github.com/wabiverse/swift-winui",
       "state" : {
         "branch" : "main",
-        "revision" : "ace6e954360b87ccca1982ae9d362be025cc5d04"
+        "revision" : "0529457d9f360904b2009fd67cba90046ff252c4"
       }
     },
     {
-      "identity" : "swiftgmodule",
+      "identity" : "zlib",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGModule.git",
+      "location" : "https://github.com/the-swift-collective/zlib.git",
       "state" : {
-        "branch" : "main",
-        "revision" : "98d287512dd7589b30b001936a1ab7ab593b7b08"
-      }
-    },
-    {
-      "identity" : "swiftgobject",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGObject.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "5469ce3c5581791d64df8d6d8d1c220de56a9fef"
-      }
-    },
-    {
-      "identity" : "swiftgraphene",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGraphene.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "28cf8fbf7e0aac7cba4aa1fc2694cf1c4bd5698f"
-      }
-    },
-    {
-      "identity" : "swiftgsk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGsk.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "ea2ff914602a2f95b2693fe60dd268c05d57efb1"
-      }
-    },
-    {
-      "identity" : "swiftgtk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftGtk.git",
-      "state" : {
-        "branch" : "gtk4",
-        "revision" : "3cd5ce0c3a7c04375d8a52ba0d34d6da29b07164"
-      }
-    },
-    {
-      "identity" : "swiftharfbuzz",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftHarfBuzz.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "b323f200e3c9de6c20759465ba70e5a853fec228"
-      }
-    },
-    {
-      "identity" : "swiftlibxml",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftLibXML.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "1b9b259c27cd70868d50bdd9f6bffcb824d81b24"
-      }
-    },
-    {
-      "identity" : "swiftpango",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftPango.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "00887547ccca94c477e2a1b15b677a3731c5fdf6"
-      }
-    },
-    {
-      "identity" : "swiftpangocairo",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/rhx/SwiftPangoCairo.git",
-      "state" : {
-        "branch" : "main",
-        "revision" : "e1ddcaab49838cc40f102bcc50f39e3bdab0221e"
-      }
-    },
-    {
-      "identity" : "yams",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/jpsim/Yams.git",
-      "state" : {
-        "revision" : "9ff1cc9327586db4e0c8f46f064b6a82ec1566fa",
-        "version" : "4.0.6"
+        "revision" : "f35d438c14187cb369dfd82603c3427dc66fbed5",
+        "version" : "1.3.1"
       }
     }
   ],

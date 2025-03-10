@@ -12,9 +12,7 @@ let package = Package(
             targets: ["Gtk4LayerShell"])
     ],
     dependencies: [
-        .package(url: "https://github.com/rhx/gir2swift.git", branch: "main"),
-        .package(url: "https://github.com/rhx/SwiftGtk.git", branch: "gtk4"),
-        .package(url: "https://github.com/rhx/SwiftGdk.git", branch: "gtk4"),
+        .package(url: "https://github.com/stackotter/swift-cross-ui", branch: "main")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -31,18 +29,7 @@ let package = Package(
             name: "Gtk4LayerShell",
             dependencies: [
                 "CGtk4LayerShell",
-                .product(name: "gir2swift", package: "gir2swift"),
-                .product(name: "Gtk", package: "SwiftGtk"),
-                .product(name: "Gdk", package: "SwiftGdk"),
-            ],
-            swiftSettings: [
-                .unsafeFlags(["-suppress-warnings"], .when(configuration: .release)),
-                .unsafeFlags(
-                    ["-suppress-warnings", "-Xfrontend", "-serialize-debugging-options"],
-                    .when(configuration: .debug)),
-            ],
-            plugins: [
-                .plugin(name: "gir2swift-plugin", package: "gir2swift")
+                .product(name: "Gtk", package: "swift-cross-ui"),
             ]),
         .testTarget(
             name: "Gtk4LayerShellTests",
