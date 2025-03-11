@@ -13,7 +13,18 @@ open class Display: Gtk.GObject {
     }
 
     public static func getMonitor(index: Int) -> Monitor {
-        Monitor(get_g_list_monitors()[index])
+        let list_model = get_g_list_monitors()
+        if list_model.opaquePointer == nil {
+            fatalError("ListModel pointer is nil")
+        }
+
+        let monitor: OpaquePointer? = list_model[index]
+
+        if monitor == nil {
+            fatalError("Monitor pointer is nil")
+        }
+
+        return Monitor(monitor!)
     }
 
     static func get_g_list_monitors() -> GListModel {
@@ -30,6 +41,8 @@ open class Display: Gtk.GObject {
         if monitors == nil {
             fatalError("Monitors not found!")
         }
+
+        print("monitors setup!")
 
         return GListModel(monitors!)
     }
