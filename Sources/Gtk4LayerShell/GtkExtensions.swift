@@ -57,5 +57,5 @@ open class Display: Gtk.GObject {
 }
 
 open class Monitor: Gtk.GObject {
-    @GObjectProperty(named: "valid") public var valid: Bool
+    // @GObjectProperty(named: "valid") public var valid: Bool
 }
