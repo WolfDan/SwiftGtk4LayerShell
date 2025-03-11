@@ -1,5 +1,5 @@
 {
-  "originHash" : "0d4cc1273863c44f9c46635e68dbce9b4d1fd575cab44182a0137e8c447986a4",
+  "originHash" : "38a3775cc0bf1629b88586fa5962afaa0c6280ff96c9e457af3369228e21f4bc",
   "pins" : [
     {
       "identity" : "jpeg",
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/WolfDan/swift-cross-ui",
       "state" : {
-        "branch" : "main",
-        "revision" : "1f71097aab2dd86d904e141138e8db36f0ece68d"
+        "branch" : "scene-integration",
+        "revision" : "8ea6a43b8874b4f69c9c6f56ac1fa49437033534"
       }
     },
     {
