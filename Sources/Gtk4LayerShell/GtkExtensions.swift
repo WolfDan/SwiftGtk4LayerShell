@@ -18,11 +18,15 @@ open class Display: Gtk.GObject {
             fatalError("ListModel pointer is nil")
         }
 
+        print("list_model setup")
+
         let monitor: OpaquePointer? = list_model[index]
 
         if monitor == nil {
             fatalError("Monitor pointer is nil")
         }
+
+        print("monitor setup")
 
         return Monitor(monitor!)
     }
