@@ -1,23 +1,7 @@
 import CGtk
 import Gtk
 
-@MainActor
 open class Display: Gtk.GObject {
-    static let shared = Display()
-
-    // TODO listen to events for display monitors changes
-    public static var display: OpaquePointer {
-        // TODO GTKDisplay pointer
-        shared.opaquePointer!
-    }
-
-    private convenience init() {
-        self.init(gdk_display_get_default())
-    }
-
-    @GObjectProperty(named: "composited") public var composited: Bool
-    @GObjectProperty(named: "model") public var model: String
-
     public static func getMonitors() -> [Monitor] {
         let list_model = get_g_list_monitors()
         var monitors: [Monitor] = []
@@ -33,7 +17,7 @@ open class Display: Gtk.GObject {
     }
 
     static func get_g_list_monitors() -> GListModel {
-        GListModel(gdk_display_get_monitors(display))
+        GListModel(gdk_display_get_monitors(gdk_display_get_default()))
     }
 }
 
