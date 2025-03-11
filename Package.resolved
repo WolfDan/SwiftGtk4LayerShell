@@ -1,5 +1,5 @@
 {
-  "originHash" : "bad7ead95f738d35812a19e2c29f3d314b95b305fc14c2ea4c8798e94b838ab8",
+  "originHash" : "0d4cc1273863c44f9c46635e68dbce9b4d1fd575cab44182a0137e8c447986a4",
   "pins" : [
     {
       "identity" : "jpeg",
@@ -31,7 +31,7 @@
     {
       "identity" : "swift-cross-ui",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/stackotter/swift-cross-ui",
+      "location" : "https://github.com/WolfDan/swift-cross-ui",
       "state" : {
         "branch" : "main",
         "revision" : "1f71097aab2dd86d904e141138e8db36f0ece68d"
