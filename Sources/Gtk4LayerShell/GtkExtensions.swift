@@ -17,12 +17,16 @@ open class Display: Gtk.GObject {
     }
 
     static func get_g_list_monitors() -> GListModel {
-        let display = get_default()
-        if display == nil {
+        let displayPointer = get_default()
+        if displayPointer == nil {
             fatalError("Display not found! Ensure you are running a Wayland compositor")
         }
 
-        let monitors = gdk_display_get_monitors(display!)
+        let display = Display(displayPointer!)
+
+        print("Display setup!")
+
+        let monitors = gdk_display_get_monitors(OpaquePointer(display.gobjectPointer))
         if monitors == nil {
             fatalError("Monitors not found!")
         }
