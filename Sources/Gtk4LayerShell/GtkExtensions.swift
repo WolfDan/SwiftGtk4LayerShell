@@ -1,18 +1,18 @@
 import CGtk
 import Gtk
 
-open class Display: Gtk.GObject {
-    public static func getMonitors() -> [Monitor] {
+open class Display {
+    public static func getMonitors() -> [OpaquePointer] {
         let list_model = get_g_list_monitors()
-        var monitors: [Monitor] = []
+        var monitors: [OpaquePointer] = []
         for i in 0..<list_model.count {
-            let monitor = Monitor(list_model[i])
+            let monitor = list_model[i]
             monitors.append(monitor)
         }
         return monitors
     }
 
-    public static func getMonitor(index: Int) -> Monitor {
+    public static func getMonitor(index: Int) -> OpaquePointer {
         let list_model = get_g_list_monitors()
         if list_model.opaquePointer == nil {
             fatalError("ListModel pointer is nil")
@@ -28,7 +28,7 @@ open class Display: Gtk.GObject {
 
         print("monitor setup")
 
-        return Monitor(monitor!)
+        return monitor!
     }
 
     static func get_g_list_monitors() -> GListModel {
@@ -37,11 +37,9 @@ open class Display: Gtk.GObject {
             fatalError("Display not found! Ensure you are running a Wayland compositor")
         }
 
-        let display = Display(displayPointer!)
-
         print("Display setup!")
 
-        let monitors = gdk_display_get_monitors(OpaquePointer(display.gobjectPointer))
+        let monitors = gdk_display_get_monitors(displayPointer)
         if monitors == nil {
             fatalError("Monitors not found!")
         }
@@ -54,8 +52,4 @@ open class Display: Gtk.GObject {
     static func get_default() -> OpaquePointer? {
         gdk_display_get_default()
     }
-}
-
-open class Monitor: Gtk.GObject {
-    // @GObjectProperty(named: "valid") public var valid: Bool
 }
